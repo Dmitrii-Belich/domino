@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Boneset — Privacy Policy</title>
+    <style>
+      :root {
+        --ink: #16130f;
+        --ink-soft: #4a4136;
+        --sheet: #fff8e8;
+        --card: #ffffff;
+        --accent: #ffc93c;
+        --muted: #8a7a5e;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #f6efe0;
+          --ink-soft: #cdc2ad;
+          --sheet: #17140f;
+          --card: #221d16;
+          --muted: #9b8d74;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 48px 20px 72px;
+        background: var(--sheet);
+        color: var(--ink);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        margin: 40px 0 8px;
+        font-size: 19px;
+        line-height: 1.3;
+      }
+
+      .updated {
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .lead {
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        border-radius: 0 12px 12px 0;
+        background: var(--card);
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      p,
+      li {
+        color: var(--ink-soft);
+      }
+
+      .lead p {
+        color: var(--ink);
+      }
+
+      code {
+        padding: 1px 5px;
+        border-radius: 5px;
+        background: var(--card);
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 14px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+
+      footer {
+        margin-top: 48px;
+        padding-top: 16px;
+        border-top: 1px solid var(--muted);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Boneset — Privacy Policy</h1>
+      <p class="updated">Last updated: 4 September 2026</p>
+
+      <div class="lead">
+        <p>
+          Boneset is a domino puzzle. It has no accounts of its own, no chat and no sign-up form, so
+          it never learns your name, e-mail or anything you would call an identity. What it does
+          collect is a random player id plus a record of how the puzzles are going — enough to tell
+          a board that is too hard from a board that is broken.
+        </p>
+      </div>
+
+      <h2>Who to write to</h2>
+      <p>
+        Questions, access requests, deletion requests — one address:
+        <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>.
+      </p>
+
+      <h2>What stays on your device</h2>
+      <ul>
+        <li>Your progress through the campaign and the log of boards you have solved.</li>
+        <li>Settings: language and sound.</li>
+        <li>An unfinished board, so you can come back to it.</li>
+        <li>
+          A random player id (a UUID, generated on your device the first time you play). It is not
+          derived from anything about you or your hardware.
+        </li>
+      </ul>
+      <p>
+        On CrazyGames this lives in the CrazyGames Data Module — the platform's storage, covered by
+        the platform's own policy. Everywhere else it is ordinary browser storage. Clearing site
+        data removes all of it, the player id included.
+      </p>
+
+      <h2>What leaves your device</h2>
+      <ul>
+        <li>
+          <strong>Gameplay analytics</strong>, to PostHog on EU servers: named in-game events — the
+          app opening and the session ending, a level started, solved or abandoned, the first move,
+          hints and auto-fill, mode switches, pauses, board sharing, language and sound changes,
+          generator use, and errors. Each event carries the random player id, the game version and
+          platform, your browser and device type, and the IP address of the request, from which
+          PostHog derives an approximate country and city.
+        </li>
+        <li>
+          <strong>Leaderboard entries</strong>, to a Supabase database: when you solve a board, its
+          completion time, the player id and the platform. The game can ask only for its own place
+          in the table — it cannot read anyone else's rows.
+        </li>
+        <li>
+          <strong>The end-of-game survey</strong>, if you fill it in: your rating and whatever you
+          type in the comment. It is a free-text field, so please don't put personal details in it.
+        </li>
+        <li>
+          <strong>A CrazyGames account id</strong>, if you are signed in on CrazyGames: it is
+          attached to your analytics profile so that progress made on two devices reads as one
+          player. Nothing else from the account is read.
+        </li>
+      </ul>
+
+      <h2>What the game never does</h2>
+      <ul>
+        <li>No names, e-mail addresses, phone numbers, contacts or payment details.</li>
+        <li>No advertising profiles, no cross-site tracking, no data brokers.</li>
+        <li>Your data is never sold or handed to anyone beyond the services listed below.</li>
+      </ul>
+
+      <h2>Why we collect it</h2>
+      <p>
+        Legitimate interest in making the game work: seeing where players get stuck, which boards go
+        unsolved, and what crashes. The data is pseudonymous — it hangs on a random id, and we have
+        no way to walk back from that id to a person.
+      </p>
+
+      <h2>How long it is kept</h2>
+      <p>
+        Analytics events are kept while they still say something about how the game plays, and are
+        dropped when they stop being useful. A leaderboard row lives as long as that board's table
+        does. Both go sooner if you ask.
+      </p>
+
+      <h2>Getting your data out or deleted</h2>
+      <p>
+        Clearing the site's data — or uninstalling the app — wipes everything held on your device,
+        and the game starts over with a brand-new id.
+      </p>
+      <p>
+        For the records already sent, write to
+        <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>. Everything is keyed by
+        the random player id, so include it, or the records cannot be found. You will find it in
+        your browser's storage for the game under the key <code>domino.player.v1</code> (DevTools →
+        Application → Local Storage); on CrazyGames the same key lives in the platform's storage.
+      </p>
+
+      <h2>Who processes the data</h2>
+      <ul>
+        <li>
+          <a href="https://posthog.com/privacy" rel="noopener noreferrer">PostHog</a> — product
+          analytics, EU region.
+        </li>
+        <li>
+          <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a> — the
+          leaderboard database.
+        </li>
+        <li>
+          <a href="https://www.crazygames.com/privacy" rel="noopener noreferrer">CrazyGames</a> —
+          when you play the game there, the platform collects its own data under its own policy, and
+          provides the storage the game saves progress into.
+        </li>
+      </ul>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the date at the top changes with it. Nothing here is retroactive:
+        data already collected keeps the terms it was collected under.
+      </p>
+
+      <footer>Boneset: Domino Puzzle</footer>
+    </main>
+  </body>
+</html>
