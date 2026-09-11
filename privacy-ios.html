@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
-    <title>Boneset — Privacy Policy</title>
+    <title>Boneset for iOS — Privacy Policy</title>
     <style>
       :root {
         --ink: #16130f;
@@ -149,17 +149,23 @@
   </head>
   <body>
     <main>
-      <h1>Boneset — Privacy Policy</h1>
-      <p class="updated">Last updated: 5 September 2026</p>
+      <h1>Boneset for iOS — Privacy Policy</h1>
+      <p class="updated">Last updated: 11 September 2026</p>
 
       <div class="lead">
         <p>
-          Boneset is a domino puzzle. It has no accounts of its own, no chat and no sign-up form, so
-          it never learns your name, e-mail or anything you would call an identity. What it does
-          collect is a random player id plus a record of how the puzzles are going — enough to tell
-          a board that is too hard from a board that is broken.
+          Boneset is a domino puzzle for iPhone and iPad. It has no accounts, no chat, no sign-up
+          form, no advertising and no in-app purchases, so it never learns your name, e-mail or
+          anything you would call an identity. What it does collect is a random player id plus a
+          record of how the puzzles are going — enough to tell a board that is too hard from a board
+          that is broken.
         </p>
       </div>
+
+      <p>
+        This page covers the App Store version of the game. The browser version has
+        <a href="privacy.html">its own policy</a>.
+      </p>
 
       <h2>Who to write to</h2>
       <p>
@@ -178,10 +184,8 @@
         </li>
       </ul>
       <p>
-        On CrazyGames this lives in the CrazyGames Data Module and on Yandex Games in the storage
-        the platform hands to games in the frame — both covered by the platform's own policy.
-        Everywhere else it is ordinary browser storage. Clearing site data removes all of it, the
-        player id included.
+        All of it lives in the app's own storage on the device and is included in your device
+        backups like any other app data. Deleting the app removes it, the player id included.
       </p>
 
       <h2>What leaves your device</h2>
@@ -191,7 +195,7 @@
           app opening and the session ending, a level started, solved or abandoned, the first move,
           hints and auto-fill, mode switches, pauses, board sharing, language and sound changes,
           generator use, and errors. Each event carries the random player id, the game version and
-          platform, your browser and device type, and the IP address of the request, from which
+          platform, your device type and iOS version, and the IP address of the request, from which
           PostHog derives an approximate country and city.
         </li>
         <li>
@@ -203,18 +207,20 @@
           <strong>The end-of-game survey</strong>, if you fill it in: your rating and whatever you
           type in the comment. It is a free-text field, so please don't put personal details in it.
         </li>
-        <li>
-          <strong>A platform account id</strong>, if you are signed in on CrazyGames or on Yandex
-          Games: it is attached to your analytics profile so that progress made on two devices reads
-          as one player. Nothing else from the account is read — on Yandex the game asks for the id
-          alone, without your name or avatar.
-        </li>
       </ul>
 
       <h2>What the game never does</h2>
       <ul>
         <li>No names, e-mail addresses, phone numbers, contacts or payment details.</li>
-        <li>No advertising profiles, no cross-site tracking, no data brokers.</li>
+        <li>
+          Never asks for your location, contacts, photos, camera, microphone or notifications.
+        </li>
+        <li>
+          No advertising, no advertising identifier (IDFA) and no tracking across other apps or
+          websites — the App Tracking Transparency prompt never appears because there is nothing to
+          ask for.
+        </li>
+        <li>No in-app purchases and no subscriptions.</li>
         <li>Your data is never sold or handed to anyone beyond the services listed below.</li>
       </ul>
 
@@ -234,8 +240,8 @@
 
       <h2>Getting your data out or deleted</h2>
       <p>
-        Clearing the site's data — or uninstalling the app — wipes everything held on your device,
-        and the game starts over with a brand-new id.
+        Deleting the app wipes everything held on your device, and a fresh install starts over with
+        a brand-new id.
       </p>
       <p>
         For the records already sent, write to
@@ -248,10 +254,13 @@
         <button type="button" id="player-id-copy">Copy</button>
       </div>
       <p id="player-id-missing">
-        <em>No id on this visit — this page was opened outside the game.</em> You can also find it
-        in your browser's storage for the game under the key <code>domino.player.v1</code> (DevTools
-        → Application → Local Storage); on CrazyGames and on Yandex Games the same key lives in the
-        platform's storage.
+        <em>No id on this visit — this page was opened outside the game.</em>
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The game is suitable for all ages and collects no personal information from anyone, children
+        included.
       </p>
 
       <h2>Who processes the data</h2>
@@ -265,10 +274,9 @@
           leaderboard database.
         </li>
         <li>
-          <a href="https://www.crazygames.com/privacy" rel="noopener noreferrer">CrazyGames</a> and
-          <a href="https://yandex.ru/legal/confidential/" rel="noopener noreferrer">Yandex Games</a>
-          — when you play the game on either platform, it collects its own data under its own
-          policy, and provides the storage the game saves progress into.
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a> — the
+          App Store and TestFlight deliver the app; what Apple records when you download or update
+          it is covered by Apple's own policy, and none of it reaches us.
         </li>
       </ul>
 
@@ -278,7 +286,7 @@
         data already collected keeps the terms it was collected under.
       </p>
 
-      <footer>Boneset: Domino Puzzle</footer>
+      <footer>Boneset: Domino Puzzle · App Store version</footer>
     </main>
     <script>
       // Игра открывает страницу как `…#id=<uuid>`: фрагмент до сервера не доходит, читается
