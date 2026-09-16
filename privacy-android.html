@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Boneset for Android — Privacy Policy</title>
+    <style>
+      :root {
+        --ink: #16130f;
+        --ink-soft: #4a4136;
+        --sheet: #fff8e8;
+        --card: #ffffff;
+        --accent: #ffc93c;
+        --muted: #8a7a5e;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #f6efe0;
+          --ink-soft: #cdc2ad;
+          --sheet: #17140f;
+          --card: #221d16;
+          --muted: #9b8d74;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 48px 20px 72px;
+        background: var(--sheet);
+        color: var(--ink);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        margin: 40px 0 8px;
+        font-size: 19px;
+        line-height: 1.3;
+      }
+
+      .updated {
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .lead {
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        border-radius: 0 12px 12px 0;
+        background: var(--card);
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      p,
+      li {
+        color: var(--ink-soft);
+      }
+
+      .lead p {
+        color: var(--ink);
+      }
+
+      code {
+        padding: 1px 5px;
+        border-radius: 5px;
+        background: var(--card);
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 14px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+
+      .player-id {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin: 12px 0 0;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: var(--card);
+      }
+
+      .player-id code {
+        flex: 1 1 auto;
+        padding: 0;
+        background: none;
+        color: var(--ink);
+        word-break: break-all;
+      }
+
+      .player-id button {
+        flex: none;
+        padding: 7px 14px;
+        border: 0;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #16130f;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      footer {
+        margin-top: 48px;
+        padding-top: 16px;
+        border-top: 1px solid var(--muted);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Boneset for Android — Privacy Policy</h1>
+      <p class="updated">Last updated: 16 September 2026</p>
+
+      <div class="lead">
+        <p>
+          Boneset is a domino puzzle for Android phones and tablets. It has no accounts, no chat, no
+          sign-up form, no advertising and no in-app purchases, so it never learns your name, e-mail
+          or anything you would call an identity. What it does collect is a random player id plus a
+          record of how the puzzles are going — enough to tell a board that is too hard from a board
+          that is broken.
+        </p>
+      </div>
+
+      <p>
+        This page covers the Google Play version of the game. The
+        <a href="privacy.html">browser version</a> and the
+        <a href="privacy-ios.html">App Store version</a> have their own pages.
+      </p>
+
+      <h2>Who to write to</h2>
+      <p>
+        Questions, access requests, deletion requests — one address:
+        <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>.
+      </p>
+
+      <h2>What stays on your device</h2>
+      <ul>
+        <li>Your progress through the campaign and the log of boards you have solved.</li>
+        <li>Settings: language, sound and vibration.</li>
+        <li>An unfinished board, so you can come back to it.</li>
+        <li>
+          A random player id (a UUID, generated on your device the first time you play). It is not
+          derived from anything about you or your hardware.
+        </li>
+      </ul>
+      <p>
+        All of it lives in the app's own storage on the device. If Android's app backup is on, it
+        goes into your device backup in your Google account like any other app data, under Google's
+        terms — the game itself never sends it there. Uninstalling the app removes it from the
+        device, the player id included.
+      </p>
+
+      <h2>What leaves your device</h2>
+      <ul>
+        <li>
+          <strong>Gameplay analytics</strong>, to PostHog on EU servers: named in-game events — the
+          app opening and the session ending, a level started, solved or abandoned, the first move,
+          hints and auto-fill, mode switches, pauses, board sharing, language, sound and vibration
+          changes, generator use, and errors. Each event carries the random player id, the game
+          version and platform, your device type and Android version, and the IP address of the
+          request, from which PostHog derives an approximate country and city.
+        </li>
+        <li>
+          <strong>Leaderboard entries</strong>, to a Supabase database: when you solve a board, its
+          completion time, the player id and the platform. The game can ask only for its own place
+          in the table — it cannot read anyone else's rows.
+        </li>
+        <li>
+          <strong>The end-of-game survey</strong>, if you fill it in: your rating and whatever you
+          type in the comment. It is a free-text field, so please don't put personal details in it.
+        </li>
+      </ul>
+
+      <h2>What the game never does</h2>
+      <ul>
+        <li>No names, e-mail addresses, phone numbers, contacts or payment details.</li>
+        <li>
+          Asks for no permissions beyond internet access: no location, contacts, photos, camera,
+          microphone or notifications.
+        </li>
+        <li>
+          No advertising, no Android advertising ID and no tracking across other apps or websites.
+        </li>
+        <li>No in-app purchases and no subscriptions.</li>
+        <li>Your data is never sold or handed to anyone beyond the services listed below.</li>
+      </ul>
+
+      <h2>Why we collect it</h2>
+      <p>
+        Legitimate interest in making the game work: seeing where players get stuck, which boards go
+        unsolved, and what crashes. The data is pseudonymous — it hangs on a random id, and we have
+        no way to walk back from that id to a person.
+      </p>
+
+      <h2>How long it is kept</h2>
+      <p>
+        Analytics events are kept while they still say something about how the game plays, and are
+        dropped when they stop being useful. A leaderboard row lives as long as that board's table
+        does. Both go sooner if you ask.
+      </p>
+
+      <h2>Getting your data out or deleted</h2>
+      <p>
+        Deleting the app wipes everything held on your device, and a fresh install starts over with
+        a brand-new id.
+      </p>
+      <p>
+        For the records already sent, write to
+        <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>. Everything is keyed by
+        the random player id, so include it, or the records cannot be found. Open this page from the
+        game — <strong>Menu → Privacy &amp; data</strong> — and your id appears right here:
+      </p>
+      <div class="player-id" id="player-id" hidden>
+        <code id="player-id-value"></code>
+        <button type="button" id="player-id-copy">Copy</button>
+      </div>
+      <p id="player-id-missing">
+        <em>No id on this visit — this page was opened outside the game.</em>
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The game is suitable for all ages and collects no personal information from anyone, children
+        included.
+      </p>
+
+      <h2>Who processes the data</h2>
+      <ul>
+        <li>
+          <a href="https://posthog.com/privacy" rel="noopener noreferrer">PostHog</a> — product
+          analytics, EU region.
+        </li>
+        <li>
+          <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a> — the
+          leaderboard database.
+        </li>
+        <li>
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google</a> —
+          Google Play delivers the app and keeps the device backup; what Google records when you
+          install, update or review it is covered by Google's own policy, and none of it reaches us.
+        </li>
+      </ul>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the date at the top changes with it. Nothing here is retroactive:
+        data already collected keeps the terms it was collected under.
+      </p>
+
+      <footer>Boneset: Domino Puzzle · Google Play version</footer>
+    </main>
+    <script>
+      // Игра открывает страницу как `…#id=<uuid>`: фрагмент до сервера не доходит, читается
+      // только здесь. Нет id — блок скрыт, и вместо него строка о том, что страницу открыли
+      // не из игры.
+      (function () {
+        var match =
+          /(?:^|&)id=([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:&|$)/i.exec(
+            location.hash.slice(1),
+          );
+        var block = document.getElementById("player-id");
+        var missing = document.getElementById("player-id-missing");
+        if (!match) {
+          return;
+        }
+        var id = match[1].toLowerCase();
+        var value = document.getElementById("player-id-value");
+        var button = document.getElementById("player-id-copy");
+        value.textContent = id;
+        block.hidden = false;
+        missing.hidden = true;
+
+        function select() {
+          var range = document.createRange();
+          range.selectNodeContents(value);
+          var selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+
+        button.addEventListener("click", function () {
+          var done = function () {
+            button.textContent = "Copied";
+            setTimeout(function () {
+              button.textContent = "Copy";
+            }, 1500);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(id).then(done, select);
+          } else {
+            select();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
