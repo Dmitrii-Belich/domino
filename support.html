@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Boneset: Domino Puzzle — Support</title>
+    <style>
+      :root {
+        --ink: #16130f;
+        --ink-soft: #4a4136;
+        --sheet: #fff8e8;
+        --card: #ffffff;
+        --accent: #ffc93c;
+        --muted: #8a7a5e;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #f6efe0;
+          --ink-soft: #cdc2ad;
+          --sheet: #17140f;
+          --card: #221d16;
+          --muted: #9b8d74;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 48px 20px 72px;
+        background: var(--sheet);
+        color: var(--ink);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        margin: 40px 0 8px;
+        font-size: 19px;
+        line-height: 1.3;
+      }
+
+      .lead {
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        border-radius: 0 12px 12px 0;
+        background: var(--card);
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      p,
+      li {
+        color: var(--ink-soft);
+      }
+
+      .lead p {
+        margin: 0;
+        color: var(--ink);
+        font-size: 18px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--accent);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+
+      footer {
+        margin-top: 48px;
+        padding-top: 16px;
+        border-top: 1px solid var(--muted);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Boneset: Domino Puzzle — Support</h1>
+
+      <div class="lead">
+        <p>
+          Questions, bugs, ideas, data requests — one address:
+          <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>.
+        </p>
+      </div>
+
+      <h2>What helps in a bug report</h2>
+      <ul>
+        <li>Your device and system version (for example, iPhone 15, iOS 26.1).</li>
+        <li>Where it happened: level number, a challenge, or a generated board.</li>
+        <li>A screenshot if there is something to see.</li>
+      </ul>
+
+      <h2>Common questions</h2>
+      <ul>
+        <li>
+          <strong>No account, no sign-in.</strong> Progress lives on the device. There is no
+          password to reset and no account to recover.
+        </li>
+        <li>
+          <strong>Works offline.</strong> Levels, challenges and the generator need no connection.
+          Only the leaderboard rank is fetched online.
+        </li>
+        <li>
+          <strong>Every board has exactly one solution.</strong> If a board seems stuck, the set
+          matrix and red duplicates show where the reasoning went off: undo a few tiles or jump back
+          to your checkpoint.
+        </li>
+        <li>
+          <strong>Your data.</strong> What the game collects and how to get it deleted is in the
+          privacy policy: <a href="privacy-ios.html">App Store version</a>,
+          <a href="privacy-android.html">Google Play version</a>,
+          <a href="privacy.html">browser version</a>.
+        </li>
+      </ul>
+
+      <h2>Play</h2>
+      <p>
+        The browser version is at <a href="./">dmitrii-belich.github.io/domino</a>. The same game is
+        built for iPhone and iPad (App Store) and for Android (Google Play).
+      </p>
+
+      <footer>Boneset: Domino Puzzle</footer>
+    </main>
+  </body>
+</html>
