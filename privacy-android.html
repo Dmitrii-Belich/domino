@@ -74,7 +74,8 @@
         background: var(--card);
       }
 
-      ul {
+      ul,
+      ol {
         padding-left: 22px;
       }
 
@@ -150,7 +151,7 @@
   <body>
     <main>
       <h1>Boneset for Android — Privacy Policy</h1>
-      <p class="updated">Last updated: 16 September 2026</p>
+      <p class="updated">Last updated: 17 September 2026</p>
 
       <div class="lead">
         <p>
@@ -236,19 +237,37 @@
       <p>
         Analytics events are kept while they still say something about how the game plays, and are
         dropped when they stop being useful. A leaderboard row lives as long as that board's table
-        does. Both go sooner if you ask.
+        does. Both go within 30 days if you ask — see the next section.
       </p>
 
-      <h2>Getting your data out or deleted</h2>
+      <h2 id="delete">Getting your data out or deleted</h2>
       <p>
         Deleting the app wipes everything held on your device, and a fresh install starts over with
-        a brand-new id.
+        a brand-new id. For the records already sent, there is no account to delete — everything is
+        keyed by the random player id, so the request is one e-mail:
       </p>
+      <ol>
+        <li>
+          Open this page from the game — <strong>Menu → Privacy &amp; data</strong> — and your id
+          appears below. Copy it; without the id the records cannot be found.
+        </li>
+        <li>
+          Write to <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a> with the id
+          and the word “delete”. Nothing else is needed — not your name, not the e-mail you write
+          from.
+        </li>
+        <li>
+          Within 30 days you get a reply confirming the deletion. The same address answers a request
+          for a copy of what is held under your id.
+        </li>
+      </ol>
       <p>
-        For the records already sent, write to
-        <a href="mailto:bonesetpuzzle@gmail.com">bonesetpuzzle@gmail.com</a>. Everything is keyed by
-        the random player id, so include it, or the records cannot be found. Open this page from the
-        game — <strong>Menu → Privacy &amp; data</strong> — and your id appears right here:
+        What goes: every analytics event, error report and survey answer tied to the id in PostHog,
+        and every leaderboard row for it in Supabase — all of it, with nothing kept back. What
+        stays: nothing that references the id. Totals already folded into aggregate counts (how many
+        players solved a board, how often a hint is used) carry no id and cannot be traced back to
+        you. The game keeps running on the device with the same id until you uninstall it; play on,
+        and new records start accumulating under that id again.
       </p>
       <div class="player-id" id="player-id" hidden>
         <code id="player-id-value"></code>
