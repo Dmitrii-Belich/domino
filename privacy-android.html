@@ -151,7 +151,7 @@
   <body>
     <main>
       <h1>Boneset for Android — Privacy Policy</h1>
-      <p class="updated">Last updated: 17 September 2026</p>
+      <p class="updated">Last updated: 29 September 2026</p>
 
       <div class="lead">
         <p>
@@ -185,10 +185,11 @@
         </li>
       </ul>
       <p>
-        All of it lives in the app's own storage on the device. If Android's app backup is on, it
-        goes into your device backup in your Google account like any other app data, under Google's
-        terms — the game itself never sends it there. Uninstalling the app removes it from the
-        device, the player id included.
+        All of it lives in the app's own storage on the device. If Android's app backup is on, that
+        storage — and none of the app's other files — goes into your device backup in your Google
+        account, under Google's terms; the game itself never sends it there. Android makes the
+        backup about once a day and restores it when the game is installed again, so a reinstall
+        brings back your progress and player id as of the last backup.
       </p>
 
       <h2>What leaves your device</h2>
@@ -242,9 +243,11 @@
 
       <h2 id="delete">Getting your data out or deleted</h2>
       <p>
-        Deleting the app wipes everything held on your device, and a fresh install starts over with
-        a brand-new id. For the records already sent, there is no account to delete — everything is
-        keyed by the random player id, so the request is one e-mail:
+        Uninstalling the app wipes what it holds on the device, but with app backup on, installing
+        it again restores the last backup, the same id included. To start over with a brand-new id,
+        clear the game's storage instead: Settings → Apps → Boneset → Storage → Clear storage. For
+        the records already sent, there is no account to delete — everything is keyed by the random
+        player id, so the request is one e-mail:
       </p>
       <ol>
         <li>
@@ -266,8 +269,8 @@
         and every leaderboard row for it in Supabase — all of it, with nothing kept back. What
         stays: nothing that references the id. Totals already folded into aggregate counts (how many
         players solved a board, how often a hint is used) carry no id and cannot be traced back to
-        you. The game keeps running on the device with the same id until you uninstall it; play on,
-        and new records start accumulating under that id again.
+        you. The game keeps running on the device with the same id until you clear its storage; play
+        on, and new records start accumulating under that id again.
       </p>
       <div class="player-id" id="player-id" hidden>
         <code id="player-id-value"></code>
